@@ -4,9 +4,6 @@
 [![Request feature](https://img.shields.io/static/v1?label=Request&message=Feature&color=blue&style=for-the-badge&logo=addthis)](https://github.com/minamaged113/pp-template/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=)
 [![Report bug](https://img.shields.io/static/v1?label=Report&message=bug&color=blue&style=for-the-badge)](https://github.com/minamaged113/pp-template/issues/new?assignees=&labels=bug&template=bug_report.md&title=)
 [![CircleCI Build Status](https://img.shields.io/circleci/build/github/minamaged113/pp-template/master?color=blue&label=MASTER%20BUILD&logo=circleci&style=for-the-badge&token=33be814517fadea414e106e538711f002bbcefa7)](https://app.circleci.com/pipelines/github/minamaged113/pp-template)
-https://img.shields.io/circleci/build/github/minamaged113/pp-template/master?color=blue&label=MASTER%20BUILD&logo=circleci&style=for-the-badge&token=33be814517fadea414e106e538711f002bbcefa7
-
-<!-- [![Send me a message](https://img.shields.io/static/v1?label=Chat%20with&message=Author&color=blue&style=for-the-badge)](CHAT_LINK_GOES_HERE) -->
 
 # Project Template
 
