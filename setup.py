@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-from src.init import __VERSION__
+from src.package import __VERSION__
 
 setup(
     name="ppt",
