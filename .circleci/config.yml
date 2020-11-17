@@ -13,9 +13,12 @@ jobs:
       - python/save-cache
       - run:
           command: make package
-          name: Test
+          name: CREATE PYTHON PACKAGE
+      - run:
+          command: make install
+          name: INSTALL CREATED PYTHON PACKAGE
 
 workflows:
   main:
     jobs:
-      - build-and-test
+      - BUILD
