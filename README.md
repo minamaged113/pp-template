@@ -8,3 +8,67 @@
 # Project Template
 
 This repository is intended to be a project template. Fork it to your own repository and start developing.
+
+## Start it
+
+```bash
+git clone https://github.com/minamaged113/pp-template.git
+cd pp-template
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Package it
+
+```bash
+python3 setup.py sdist bdist_wheel
+```
+
+## Upload it
+
+In order to distribute your work as a package, you should link your code, development environment, and CI environment to publishing host.
+
+### PYPI Account
+
+You should have an account on the **PY**thon **P**ackaging **I**ndex. Create your account [here](https://pypi.org/account/register/) or [login](https://pypi.org/account/login/) to an existing account.
+
+### PYPI Production Token
+
+Create a token for your account on the production environment to allow publishing packages without password from [here](https://pypi.org/manage/account/token/).
+
+### Staging Environment
+
+If you want, you can create a staging environment, where you can push pre-release packages. PyPI provides a testing package index which can provide you with the needed hosting platform. Visit [Test PyPI](https://test.pypi.org/) for more information. 
+
+You should be able to perform the last 2 steps exactly the same again to the staging environment in Test PyPI.
+
+### Configuration file 
+
+To define your configuration for the python package indexes, create a `.pypirc` file. If you are using linux, this file is usually found in `$HOME/.pypirc`. If it is not there, create it and populate it with the following:
+
+```bash
+[pypi]
+  username = __token__
+  password = <PLACE_YOUR_TOKEN_HERE>
+```
+
+If you have congigured your own staging environment, you can add it to the `.pypirc` file also, as follows:
+
+```bash
+[testpypi]
+  username = __token__
+  password = <PLACE_YOUR_TEST_TOKEN_HERE>
+```
+
+After configuring the `.pypirc` file, go ahead and restrict access to it, because saving information as text, unencrypted, is not the brightest idea.
+
+```bash
+chmod 600 $HOME/.pypirc
+```
+
+
+## READ MORE
+
+1. https://packaging.python.org/specifications/pypirc/
+2. 
