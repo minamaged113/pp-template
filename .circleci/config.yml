@@ -12,7 +12,7 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: python3 setup.py sdist bdist_wheel
+          command: make package
           name: Test
 
 workflows:
