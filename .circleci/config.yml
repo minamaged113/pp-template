@@ -4,7 +4,7 @@ orbs:
   python: circleci/python@0.2.1
 
 jobs:
-  build-and-test:
+  BUILD:
     executor: python/default
     steps:
       - checkout
@@ -14,11 +14,6 @@ jobs:
       - run:
           command: make package
           name: CREATE PYTHON PACKAGE
-      
-
-  INSTALL:
-    executor: python/default
-    steps:
       - run:
           command: make install
           name: INSTALL CREATED PYTHON PACKAGE
@@ -27,4 +22,3 @@ workflows:
   main:
     jobs:
       - BUILD
-      - INSTALL
