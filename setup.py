@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 from src import __VERSION__
-improt subprocess
+import subprocess
 
 def getDependencies(fname):
     """Get dependencies from requirements file.
